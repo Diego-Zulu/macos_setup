@@ -12,6 +12,10 @@ cp -R Code '$HOME/Library/Application Support/Code'
 #Install homebrew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
+brew install postgresql
+
+brew tap heroku/brew && brew install heroku
+
 brew install rbenv
 
 brew install nodenv
