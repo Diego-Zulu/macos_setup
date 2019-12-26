@@ -1,0 +1,41 @@
+#!/bin/bash
+
+# Install multiple apps with macapps
+curl -s 'https://api.macapps.link/en/firefox-chrome-openoffice-sublime-vscode-docker-postman-iterm-unarchiver-flux-spectacle-spotify-vlc-gimp-skype-slack-whatsapp' | sh
+
+# Vscode extensions
+cp -R .vscode ~/.vscode
+
+# Vscode settings
+cp -R Code '$HOME/Library/Application Support/Code'
+
+#Install homebrew
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+brew install rbenv
+
+brew install nodenv
+
+brew install pyenv
+
+brew cask install karabiner-elements
+
+# Karabiner settings
+cp -R karabiner ~/.config/karabiner
+
+brew install zsh zsh-completions zsh-syntax-highlighting
+
+# Install oh-my-zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+cp .zshrc ~/.zshrc
+
+cp .vimrc ~/.vimrc
+
+brew tap sambadevi/powerlevel9k && brew install powerlevel9k
+
+brew tap homebrew/cask-fonts && brew cask install font-hack-nerd-font
+
+echo 'Remember to load iterm2 config from com.googlecode.iterm2.plist'
+echo 'Remember to change scroll direction, customize toolbar, trackpad speed, see battery status, see bluetooth icon, dock position, and set permitions in macos preferences!'
+echo 'Remember to set up your ssh keys!'
