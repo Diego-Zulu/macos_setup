@@ -4,10 +4,10 @@
 curl -s 'https://api.macapps.link/en/firefox-chrome-openoffice-sublime-vscode-docker-postman-iterm-unarchiver-flux-spectacle-spotify-vlc-gimp-skype-slack-whatsapp' | sh
 
 # Vscode extensions
-cp -R backups/.vscode ~/.vscode
+cp -R backups/.vscode ~
 
 # Vscode settings
-cp -R backups/Code '$HOME/Library/Application Support/Code'
+cp -R backups/Code ~/Library/Application\ Support
 
 #Install homebrew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
@@ -25,7 +25,7 @@ brew install pyenv
 brew cask install karabiner-elements
 
 # Karabiner settings
-cp -R backups/karabiner ~/.config/karabiner
+cp -R backups/karabiner ~/.config
 
 brew install zsh zsh-completions zsh-syntax-highlighting
 

@@ -1,13 +1,13 @@
 #!/bin/bash
 
 # Vscode extensions
-cp -R -f ~/.vscode backups/.vscode
+cp -R ~/.vscode backups
 
 # Vscode settings
-cp -R -f '$HOME/Library/Application Support/Code/User/settings.json' backups/Code/User/settings.json
+cp -R ~/Library/Application\ Support/Code/User/settings.json backups/Code/User/settings.json
 
-cp -R -f ~/.config/karabiner backups/karabiner
+cp -R ~/.config/karabiner backups
 
-cp -f backups/.zshrc ~/.zshrc
+cp backups/.zshrc ~/.zshrc
 
-cp -f backups/.vimrc ~/.vimrc
+cp backups/.vimrc ~/.vimrc
