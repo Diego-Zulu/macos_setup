@@ -1,0 +1,18 @@
+#!/bin/bash
+
+# Vscode extensions
+cp -R backups/.vscode ~
+
+# Vscode settings
+cp -R backups/Code ~/Library/Application\ Support
+
+# Karabiner settings
+cp -R backups/karabiner ~/.config
+
+cp backups/.zshrc ~/.zshrc
+
+cp backups/.vimrc ~/.vimrc
+
+echo 'Remember to load iterm2 config from com.googlecode.iterm2.plist'
+echo 'Remember to change scroll direction, customize toolbar, trackpad speed, see battery status, see bluetooth icon, dock position, and set permitions in macos preferences!'
+echo 'Remember to set up your ssh keys!'

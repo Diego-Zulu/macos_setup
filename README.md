@@ -6,11 +6,17 @@ Config and installation backup for macOS
 
 To install setup in new machine, run:
 
-`./pimp_mac`
+`./install`
 
 To backup setup, run:
 
-`./backup_stuff` and then commit changes
+`./backup` and then commit changes
+
+To configure machine from setup, run:
+
+`./pimp`
+
+_Note: `install` runs `pimp` as the last step, so no need to run it after that_
 
 ## Do manually
 
